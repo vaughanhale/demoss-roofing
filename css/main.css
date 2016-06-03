@@ -1,0 +1,1011 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  min-width: 320px;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.row, .span12, .span7 {
+    margin-left: 0;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    background-color: #222222;
+    font-size: 14px;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: normal;
+}
+
+p.small {
+    font-size: 13px;
+}
+
+.white {
+    background-color: #FFF;
+    color: #444;
+}
+.grey-light {
+    background-color: #e5e5e5;
+    color: #444;
+}
+.green {
+    background-color: #b30000;
+    color: #FFFFFF;
+}
+
+.green [class*="span"] {
+    background-color: #e60000;
+}
+
+.green h2 {
+    background-color: #cc0000;
+    padding: 13px 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.green h3 {
+    text-transform: uppercase;
+}
+
+.green h3, .green p  {
+    padding: 0px 20px;
+}
+
+.white {
+    background-color: #FFF;
+}
+
+.content {
+    padding: 0px;
+}
+
+.content p {
+    padding: 20px;
+}
+
+section a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #444;
+}
+
+section a:hover {
+    color: #666;
+}
+
+.grey-dark{
+    background-color: #292929;
+}
+
+
+.logo {
+    float: left;
+    margin-right: 40px;
+    background: none no-repeat left center;
+    background-image: url('../images/sprite.png');
+    height: 49px;
+    display: block;
+}
+
+.logo:hover {
+    opacity: .6;
+}
+
+.xero {
+    width: 49px;
+    background-position: -287px -3px;
+}
+
+.myob {
+    width: 81px;
+    background-position: -286px -58px;
+}
+
+.banklink {
+    width: 137px;
+    background-position: -286px -113px;
+}
+
+.ca {
+    float:right;
+
+    width: 103px;
+    background-position: -286px -167px;
+}
+
+
+/* Header */
+.hero {
+    background: url('../images/bg-1.jpg') no-repeat;
+    background-size: 100%;
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+.hero-logo {
+    background: #b30000;
+    display: block;
+    float: left;
+    padding: 18px 40px;
+
+    margin-left: -20px;
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin-top: 0;
+    margin-top: 18px;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    background: rgba(34, 34, 34, 0.9);
+    font-size: 12px;
+}
+nav ul li a:hover {
+    background: #222;
+}
+nav ul li a.login {
+    margin-left: 10px;
+    background: url('../images/lock.png') 60px 12px no-repeat #b30000;
+    padding-right: 40px;
+    padding-left: 15px;
+}
+nav ul li:first-child a {
+    padding-left: 15px;
+}
+nav ul li.final-child a {
+    padding-right: 15px;
+}
+
+.hero .title {
+    margin-top: 295px;
+    color: #FFF;
+    width: 980px;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 14px 20px;
+    margin-left: -20px;
+}
+.hero.slim .title {
+    margin-top: 95px;
+}
+.hero .title h1, .hero .title p {
+    margin: 0;
+    padding-left: 18px;
+}
+.hero  .title h1 {
+    font-weight: 200;
+    font-size: 24px;
+}
+.contact-links {
+    padding-top: 5px;
+}
+.contact-links a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 10px 0;
+    margin-left: 35px;
+}
+.contact-links .icon {
+    position: absolute;
+    background-image: url('../images/sprite.png');
+    display: block;
+}
+a.contact-phone {
+    padding-left: 20px;
+}
+a.contact-phone .icon {
+    background-position: -141px -71px;
+    width: 14px;
+    height: 22px;
+    left: 0;
+}
+a.contact-email {
+    padding-left: 30px;
+}
+a.contact-email .icon {
+    background-position: -137px -127px;
+    width: 22px;
+    height: 18px;
+    left: 0;
+}
+/* About */
+.about .span7 {
+    width: 565px;
+}
+.about .span5 {
+    margin-left: 5px;
+    width: 370px;
+}
+.about .span7 div,
+.about .span5 div {
+    padding: 20px 0 10px;
+}
+.about ul {
+    padding-left: 20px;
+    margin: 0 0 13px;
+}
+.about ul li {
+    margin: 0;
+    list-style: none;
+}
+.about ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: normal;
+}
+
+/* Services */
+.tab-wrap {
+    overflow: hidden;
+    margin-right: 40px;
+    background: #FFF;
+}
+.serv-list, .tabbed-container {
+    float: left;
+}
+.serv-list {
+    padding-left: 0;
+    width: 350px;
+    margin: 0;
+}
+.serv-list li {
+    margin-bottom: 0;
+    list-style: none;
+}
+.serv-list li a {
+    text-decoration : none;
+    font-weight: normal;
+    color: #FFF;
+    background: url('../images/sprite.png') #3b3b3b;
+    padding-left: 50px;
+    display: block;
+}
+.serv-list li a:hover, .serv-list li a.current {
+    background: url('../images/sprite.png') #b30000;
+}
+.serv-list li a span {
+    padding: 15px;
+    display: block;
+    background: #454545;
+}
+.serv-list li a:hover span, .serv-list li a.current span {
+    background-image: url('../images/arrow.png');
+    background-position: right center;
+    background-color: #e60000;
+    background-repeat: no-repeat;
+    border-right: solid 15px #e60000;
+}
+
+.serv-list li.service-one a {
+    background-position: -7px -3px;
+}
+.serv-list li.service-two a {
+    background-position: -7px -56px;
+}
+.serv-list li.service-three a {
+    background-position: -7px -112px;
+}
+.serv-list li.service-four a {
+    background-position: -7px -168px;
+}
+.serv-list li.service-five a {
+    background-position: -7px -222px;
+}
+
+.serv-list li.service-one a:hover, .serv-list li.service-one a.current  {
+    background-position: -66px -3px;
+}
+.serv-list li.service-two a:hover, .serv-list li.service-two a.current {
+    background-position: -66px -56px;
+}
+.serv-list li.service-three a:hover, .serv-list li.service-three a.current {
+    background-position: -66px -112px;
+}
+.serv-list li.service-four a:hover, .serv-list li.service-four a.current {
+    background-position: -66px -168px;
+}
+.serv-list li.service-five a:hover, .serv-list li.service-five a.current {
+    background-position: -66px -222px;
+}
+
+.tabbed-container {
+    background: #FFF;
+    padding: 15px;
+    width: 520px;
+}
+
+/* Team */
+.first {
+    margin-left: 0 !important;
+}
+.team {
+    font-size: 13px;
+}
+.team img {
+    width: 100%;
+}
+.team .span6 {
+    width: 440px;
+}
+.team h3 {
+    margin: 0;
+}
+.team h3 span {
+    font-weight: normal;
+}
+.team h4 {
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+.team .photo {
+    margin-bottom: 15px;
+}
+a.email-link {
+    text-decoration: none;
+}
+a.email-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact */
+.contact {
+    width: 565px;
+}
+.contact div {
+    padding: 20px;
+}
+.contact h2, .form h2 {
+    margin-bottom: 0;
+}
+.contact h4, .contact p {
+    margin: 0;
+}
+.contact p {
+    padding: 0;
+}
+.contact ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    /* HIDE FORM
+    width: 250px; */
+    width: 45%;
+}
+.contact ul.first-contact {
+    margin-right: 55px;
+}
+.contact ul li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+.contact a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.form {
+    width: 370px;
+    margin-left: 5px;
+}
+
+.form div {
+    padding: 20px;
+}
+.form input[type='text'],
+.form input[type='email'],
+.form textarea {
+    background: #e60000;
+    border: 0;
+    color: #FFF;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form input[type='text'],
+.form textarea {
+    width: 100%;
+}
+.form textarea {
+    height: 86px;
+}
+.form p {
+    padding: 0;
+    margin: 0 0 10px;
+}
+.bottom-form {
+    margin-bottom: 0;
+}
+.email-address {
+    width: 238px;
+}
+.submit {
+    background: #338e2f;
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+.submit:hover {
+    background: #2E802A;
+}
+
+/* HIDE THE FORM */
+#contact-us .span7 {
+    width: 100%;
+}
+
+/* Footer */
+.small-text {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+.small-text, .copyright {
+    color: #adadad;
+}
+.small-text p {
+    border-left: solid 1px #adadad;
+    float: left;
+    padding: 0 10px;
+}
+.small-text p.first-small-text {
+    padding-left: 0;
+    border-left: none;
+}
+.copyright {
+    clear: both;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+footer {
+    margin-bottom: 40px;
+}
+footer .grey-dark {
+    padding-top: 12px;
+    padding-bottom: 35px;
+}
+footer a {
+    color: #adadad;
+    text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* =============
+Retina Images
+============== */
+/* HIGH RESOLUTION DEVICE STYLE ADJUSTMENTS */
+@media print,
+    (-o-min-device-pixel-ratio: 5/4),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 120dpi) {
+
+    .logo {
+        background-image: url('../images/sprite-2x.png');
+        background-size: 620px 275px;
+    }
+    .contact-links .icon {
+        background-image: url('../images/sprite-2x.png');
+        background-size: 620px 275px;
+    }
+    .serv-list li a {
+        background-image: url('../images/sprite-2x.png');
+        background-size: 620px 275px;
+    }
+    .serv-list li a:hover, .serv-list li a.current {
+        background-image: url('../images/sprite-2x.png');
+        background-size: 620px 275px;
+    }
+
+}
+
+@media (max-width:979px){
+    .container {
+        width: 760px;
+    }
+    .hero .title {
+        width: 800px;
+    }
+    .hero .span7 {
+        width: 440px;
+    }
+    .hero .span5 {
+        width: 250px;
+    }
+    .hero .span5 a {
+        float: none;
+        padding: 0 0 0 35px;
+    }
+    .hero .span5 a.contact-phone {
+        padding-bottom: 5px;
+    }
+    .hero .span5 a.contact-phone .icon {
+        left:4px;
+    }
+    .about .span5 {
+        width: 300px;
+        min-height: 514px;
+    }
+    .about .span7 {
+        width: 450px;
+    }
+    .tab-wrap {
+        margin-right: 0;
+    }
+    .tabbed-container {
+        width: 390px;
+    }
+    .serv-list {
+        width: 300px;
+    }
+    .serv-list li a span {
+        padding: 17px 15px;
+    }
+    .team .span6 {
+        width: 370px;
+    }
+    .team .span6 .photo img {
+        width: 100%;
+    }
+    .contact, .form {
+        width: 100%;
+    }
+    .contact ul {
+        width: 50%;
+    }
+    .form {
+        margin: 20px 0 0 0;
+    }
+    .email-address {
+        width: 85%;
+    }
+    .span12 {
+        width: 100%;
+        padding: 0;
+    }
+    .contact ul.first-contact {
+        margin-right: 0;
+    }
+    .form p.bottom-form {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:800px){
+   .container {
+        width: 100%;
+        box-sizing: border-box;
+   }
+   .span12 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+   }
+   .hero {
+    margin-top: 0;
+   }
+   .hero .title {
+       width: 100%;
+       margin-top: 25%;
+    }
+    .hero .title h1, .hero .title p {
+        padding-left: 0;
+    }
+    .hero .span7, .hero .span5 {
+        width: 100%;
+        text-align: center;
+    }
+    .hero .span5 {
+        width:  220px;
+        margin: 0 auto ;
+        padding-top: 20px;
+        float: none;
+        overflow: hidden;
+    }
+    .hero .span5 a {
+        float: left;
+        text-align: left;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .about .span7, .about .span5 {
+        width: 100%;
+    }
+    .about .span5 {
+        margin: 20px 0 0 0;
+        min-height: 0;
+    }
+    .tab-wrap {
+        width: 100%;
+    }
+    .serv-list {
+        width: 100%;
+    }
+    .tabbed-container {
+        width: 90%;
+    }
+    .team .span6 {
+        width: 48%;
+    }
+
+
+}
+
+
+@media (max-width:695px){
+    .hero-logo {
+        float: none;
+        margin: 0 auto;
+        width: 185px;
+    }
+
+    nav {
+        overflow: hidden;
+        margin: 20px auto 0;
+        float: none;
+        width: 274px;
+    }
+    .hero .title {
+        margin-top: 20px;
+        background: rgba(34, 34, 34, 1);
+    }
+    .hero .title div {
+        float: none;
+    }
+    /* HIDE FORM
+    .contact ul, .email-address, .submit {
+        width: 100%;
+    }
+    */
+    .contact ul {
+        width: 50%;
+    }
+    .serv-list li a span {
+        padding: 15px;
+    }
+    .small-text p {
+        border: 0;
+        float: none;
+        padding: 0;
+    }
+    .email-address {
+        margin-bottom: 10px;
+    }
+    .submit {
+        margin-left: 0;
+    }
+    .copyright {
+        padding: 0;
+    }
+    nav ul li a.login {
+        margin-left: 0;
+        padding: 12px 6px;
+    }
+
+    .serv-list li a:hover span, .serv-list li a.current span {
+        background-image: none;
+    }
+    .ca {
+        float: left;
+    }
+}
+@media (max-width:550px){
+    .team .span6 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact ul {
+        width: 100%;
+    }
+    .logo {
+        display: none;
+    }
+}
+@media (max-width:320px){
+    .hero {
+        margin-top: 0;
+    }
+    .hero .title {
+        margin-top: 20px;
+    }
+    nav {
+        margin: 10px auto 0;
+        width: 280px;
+    }
+
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+.test {
+    position: relative;
+}
+.test img {
+    position: absolute;
+    z-index: 1;
+}
+.test img.active {
+    z-index: 3;
+}
